@@ -12,8 +12,6 @@ export default function Header() {
         <p className='turkceIngılızceGecis cursor-pointer font-bold'><span className='Türkçe'>TÜRKÇE</span><span className='Geçiş'>'YE GEÇ</span></p>
 
         <div>
-
-
           <div className='SolPaddingHeader '>
             <h1 className="almila absolute top-12 font-bold">almila</h1>
 
@@ -45,7 +43,7 @@ export default function Header() {
               id="Ellipse1"
             />
           </div>
-          <div className="text-sm font-['Inter'] font-bold tracking-[1.5] text-[#4731d3] font-bold">
+          <div className="text-sm font-['Inter'] tracking-[1.5] text-[#4731d3] font-bold">
             DARK MODE
           </div>
         </div>
