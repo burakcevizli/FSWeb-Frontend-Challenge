@@ -1,0 +1,36 @@
+
+.HeaderPurpleDiv{
+   background-color: #4731D3;
+   min-width: 70%;
+   height: 65vh;
+}
+.turkceIngılızceGecis{
+   
+   align-items: end;
+   text-align: end;
+}
+.DARKMODE{
+   
+   min-width: 30%;
+}
+.SolPaddingHeader{
+   display: flex;
+   flex-direction: column;
+   margin-left: 15rem;
+   margin-right: 15rem;
+   margin-top: 10rem;
+   gap: 1rem;
+}
+.almila{
+   font-size: 8rem ;
+   color: #CBF281; 
+}
+.buttons{
+   display: flex;
+   
+   gap: 1rem;
+}
+.buttons button{
+   padding: 1rem 2rem;
+   border-radius: 10px;
+}
