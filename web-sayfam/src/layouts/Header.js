@@ -6,12 +6,13 @@ export default function Header() {
   return (
     <header className='flex HeaderClass'>
       <div className='HeaderPurpleDiv'>
-
-        <p className='turkceIngılızceGecis'>Türkçeye Geç </p>
-
+        <div className='flex justify-between ml-15'>
+          <h1 className="almila">almila</h1>
+          <p className='turkceIngılızceGecis'>Türkçeye Geç </p>
+        </div>
 
         <div className='SolPaddingHeader'>
-          <h1 className="almila">almila</h1>
+
           <h1 className='text-5xl text-green'>I am frontend developer...</h1>
           <p className='text-xl text-white'>LOREMMMMMMLOREMMMMMMLOREMMMMMMLOREMMMMMMLOREMMMMMM</p>
           <div className='buttons'>
