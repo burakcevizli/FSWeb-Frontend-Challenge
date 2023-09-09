@@ -2,8 +2,19 @@
   display: flex;
   margin-left: 15rem;
   margin-right: 15rem;
+  
+  margin-top: 2rem;
 }
 .Skills{
     color: #4832D3;
+    margin-top: 3rem;
+}
+.images{
+    width: 350px;
+    margin-left: 4rem;
     
+}
+.ImagesDiv{
+margin-left: 16rem;
+
 }

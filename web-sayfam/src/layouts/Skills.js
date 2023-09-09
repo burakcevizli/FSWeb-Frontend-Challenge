@@ -8,18 +8,18 @@ import VsCodeLogo from "../assets/vsCode.png"
 import FigmaLogo from "../assets/figma.png"
 
 export default function Skills() {
+    const array = [
+        JavascriptLogo,ReactLogo,ReduxLogo,NodeLogo,VsCodeLogo,FigmaLogo
+    ]
     return (
         <div className='skillsMain'>
-            <div>
-                <p className='Skills text-8xl '>Skills</p>
-            </div>
-            <div className='flex flex-col flex-wrap'>
-                <img src={JavascriptLogo} alt='javascript' />
-                <img src={ReactLogo} alt='react' />
-                <img src={ReduxLogo} alt='redux' />
-                <img src={NodeLogo} alt='NodeLogo' />
-                <img src={VsCodeLogo} alt='VsCodeLogo' />
-                <img src={FigmaLogo} alt='FigmaLogo' />
+            
+                <p className='Skills text-8xl'>Skills</p>
+            
+            <div className='ImagesDiv flex flex-wrap'>
+                {array.map(item =>
+                    <img className='images' src={item} alt='Pictures'/>
+                )}
             </div>
         </div>
 
