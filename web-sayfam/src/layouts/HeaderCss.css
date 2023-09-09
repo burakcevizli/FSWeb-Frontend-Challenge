@@ -1,3 +1,15 @@
+.SolPaddingHeader{
+  display: flex;
+}
+.resim{
+   margin-left: 50rem;
+}
+.Türkçe{
+   color: #CAF181;
+}
+.Geçiş{
+   color: #D9D9D9;
+}
 
 .HeaderPurpleDiv{
    background-color: #4731D3;
@@ -5,9 +17,9 @@
    height: 65vh;
 }
 .turkceIngılızceGecis{
-   
-   align-items: end;
+   margin-top: 2rem;
    text-align: end;
+   
 }
 .DARKMODE{
    min-width: 30%;
@@ -31,5 +43,5 @@
 }
 .buttons button{
    padding: 1rem 2rem;
-   border-radius: 10px;
+   border-radius: 5px;
 }
