@@ -9,17 +9,19 @@ import FigmaLogo from "../assets/figma.png"
 
 export default function Skills() {
     const array = [
-        JavascriptLogo,ReactLogo,ReduxLogo,NodeLogo,VsCodeLogo,FigmaLogo
+        JavascriptLogo, ReactLogo, ReduxLogo, NodeLogo, VsCodeLogo, FigmaLogo
     ]
     return (
         <div className='skillsMain'>
-            
-                <p className='Skills text-8xl'>Skills</p>
-            
-            <div className='ImagesDiv flex flex-wrap'>
-                {array.map(item =>
-                    <img className='images' src={item} alt='Pictures'/>
-                )}
+            <p className='Skills text-8xl'>Skills</p>
+            <div className='SecondMain' style={{ width: "60%" }}>
+
+
+                <div className='ImagesDiv flex flex-wrap'>
+                    {array.map(item =>
+                        <img className='images' src={item} alt='Pictures' />
+                    )}
+                </div>
             </div>
         </div>
 
