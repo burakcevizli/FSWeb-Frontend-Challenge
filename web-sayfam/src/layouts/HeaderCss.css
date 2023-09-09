@@ -14,12 +14,12 @@
 .HeaderPurpleDiv{
    background-color: #4731D3;
    min-width: 70%;
-   height: 65vh;
+   height: 55vh;
 }
 .turkceIngılızceGecis{
    margin-top: 2rem;
    text-align: end;
-   
+   margin-right: 2rem;
 }
 .DARKMODE{
    min-width: 30%;
@@ -31,6 +31,7 @@
    margin-right: 15rem;
    margin-top: 10rem;
    gap: 1rem;
+   width: 45%;
 }
 .almila{
    font-size: 2rem ;
