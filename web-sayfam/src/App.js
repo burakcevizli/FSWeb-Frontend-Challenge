@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './layouts/Footer';
 import Header from './layouts/Header';
 import Profile from './layouts/Profile';
 import Projects from './layouts/Projects';
@@ -11,6 +12,7 @@ function App() {
                   <Skills />
                   <Profile />
                   <Projects />
+                  <Footer />
             </>
       );
 }
