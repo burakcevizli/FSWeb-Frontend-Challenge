@@ -29,10 +29,10 @@ export default function Projects() {
                         <p className='text-[16px] mt-12 text-[#383838]'>{proje.description}</p>
 
                         <div className='mt-12 flex gap-4'>
-                            {proje.programs.map(program =>(
+                            {proje.programs.map(program => (
                                 <a className='px-4 py-2 bg-purple text-white rounded-[23px]' href='#'>{program}</a>
                             ))}
-                            
+
                         </div>
                         <div className='mt-12 pb-8'>
                             <a className='text-[#120B39] underline underline-offset-2 text-xl' href='#'>View Site</a>
