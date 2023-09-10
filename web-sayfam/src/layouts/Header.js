@@ -11,10 +11,9 @@ export default function Header() {
 
         <p className='turkceIngılızceGecis cursor-pointer font-bold'><span className='Türkçe'>TÜRKÇE</span><span className='Geçiş'>'YE GEÇ</span></p>
 
-        <div>
+        
           <div className='SolPaddingHeader '>
             <h1 className="almila absolute top-12 font-bold">almila</h1>
-
             <h1 className='text-5xl text-green font-bold'>I am frontend developer...</h1>
             <p className='text-xl text-white '>...who likes to craft solid and scalable frontend products with great user experiences.</p>
             <div className='buttons mt-7'>
@@ -27,10 +26,9 @@ export default function Header() {
                 <p>Linkedin</p>
               </button>
             </div>
-            <img src={HeroPicture} alt='hero' style={{ width: "500px" }} className='resim absolute top-14' />
-
+            <img src={HeroPicture} alt='hero' style={{ width: "31.25rem" }} className='resim ' />
           </div>
-        </div>
+      
 
 
       </div>

@@ -1,48 +1,50 @@
 .SolPaddingHeader{
-  display: flex;
-}
-.resim{
-   margin-left: 54rem;
-}
-.Türkçe{
-   color: #CAF181;
-}
-.Geçiş{
-   color: #D9D9D9;
-}
-
-.HeaderPurpleDiv{
-   background-color: #4731D3;
-   min-width: 70%;
-   height: 62vh;
-}
-.turkceIngılızceGecis{
-   margin-top: 2rem;
-   text-align: end;
-   margin-right: 2rem;
-}
-.DARKMODE{
-   min-width: 30%;
-}
-.SolPaddingHeader{
-   display: flex;
-   flex-direction: column;
-   margin-left: 15rem;
-   margin-right: 15rem;
-   margin-top: 10rem;
-   gap: 1rem;
-   width: 45%;
-}
-.almila{
-   font-size: 2rem ;
-   color: #CBF281; 
-}
-.buttons{
-   display: flex;
-   
-   gap: 1rem;
-}
-.buttons button{
-   padding: 1rem 2rem;
-   border-radius: 5px;
-}
+    display: flex;
+  }
+  .resim{
+     margin-left: 140%;
+     z-index: 1;
+     margin-top:-55%;
+  }
+  .Türkçe{
+     color: #CAF181;
+  }
+  .Geçiş{
+     color: #D9D9D9;
+  }
+  
+  .HeaderPurpleDiv{
+     background-color: #4731D3;
+     min-width: 70%;
+     height: 40%;
+  }
+  .turkceIngılızceGecis{
+     margin-top: 2rem;
+     text-align: end;
+     margin-right: 2rem;
+  }
+  .DARKMODE{
+     min-width: 30%;
+  }
+  .SolPaddingHeader{
+     display: flex;
+     flex-direction: column;
+     margin-left: 15rem;
+     margin-right: 15rem;
+     margin-top: 10rem;
+     gap: 1rem;
+     width: 45%;
+  }
+  .almila{
+     font-size: 2rem ;
+     color: #CBF281; 
+  }
+  .buttons{
+     display: flex;
+     
+     gap: 1rem;
+  }
+  .buttons button{
+     padding: 1rem 2rem;
+     border-radius: 5px;
+  }
