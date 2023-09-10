@@ -17,12 +17,12 @@ export default function Skills() {
         <div className=' w-8/12 ml-72 flex justify-between'>
             <p className=' text-8xl text-[#4832D3]' >Skills</p>
             <div className='flex justify-between'>
-                <div className='ImagesDiv flex flex-wrap'>
+                <div className='ImagesDiv flex flex-col flex-wrap'>
                     {array1.map(item =>
                         <img className='images' src={item} alt='Pictures' />
                     )}
                 </div>
-                <div className='ImagesDiv flex flex-wrap'>
+                <div className='ImagesDiv flex flex-col flex-wrap'>
                     {array2.map(item =>
                         <img className='images' src={item} alt='Pictures' />
                     )}
