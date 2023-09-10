@@ -34,7 +34,7 @@ export default function Projects() {
                             ))}
                             
                         </div>
-                        <div className='mt-12 '>
+                        <div className='mt-12 pb-8'>
                             <a className='text-[#120B39] underline underline-offset-2 text-xl' href='#'>View Site</a>
                             <a className='ml-24 text-[#120B39] underline underline-offset-2 text-xl' href='#'>Github</a>
                         </div>
