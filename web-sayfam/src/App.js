@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import WebSiteProvider from './contexts/websiteContext';
 import Footer from './layouts/Footer';
@@ -7,6 +8,8 @@ import Projects from './layouts/Projects';
 import Skills from './layouts/Skills';
 
 function App() {
+
+      
       return (
             <>
                   <WebSiteProvider>
