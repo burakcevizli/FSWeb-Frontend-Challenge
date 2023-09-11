@@ -19,13 +19,13 @@ export default function Projects() {
 
                         <div className='mt-12 flex gap-4'>
                             {proje.programs.map((program,index)  => (
-                                <a key={index} className='px-4 py-2 bg-purple dark:bg-[#8173DA] text-white rounded-[23px]' href='#'>{program}</a>
+                                <a key={index} className='px-4 py-2 bg-purple dark:bg-[#8173DA] text-white rounded-[23px]'>{program}</a>
                             ))}
 
                         </div>
                         <div className='mt-12 pb-8'>
-                            <a className='text-[#120B39] dark:text-[#CBF281] underline underline-offset-2 text-xl' href='#'>{data[language].projects.visit}</a>
-                            <a className='ml-24 text-[#120B39] dark:text-[#CBF281] underline underline-offset-2 text-xl' href='#'>Github</a>
+                            <a className='text-[#120B39] dark:text-[#CBF281] underline underline-offset-2 text-xl'>{data[language].projects.visit}</a>
+                            <a className='ml-24 text-[#120B39] dark:text-[#CBF281] underline underline-offset-2 text-xl' >Github</a>
                         </div>
                     </div>
                 </div>
