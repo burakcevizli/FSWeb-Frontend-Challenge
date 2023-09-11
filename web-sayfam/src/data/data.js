@@ -6,6 +6,13 @@ import VsCodeLogo from "../assets/vsCode.png"
 import FigmaLogo from "../assets/figma.png"
 import ProjectPicture1 from "../assets/ProjectPictures1.png"
 import ProjectPicture2 from "../assets/Journey.png"
+import JavascriptDark from "../assets/jsDark.png"
+import ReactDark from "../assets/reactDark.png"
+import ReduxDark from "../assets/reduxDark.png"
+import nodeDark from "../assets/nodeDark.png"
+import vsDark from "../assets/vscDodeDark.png"
+import figmaDark from "../assets/figmaDark.png"
+
 
 const data = {
     tr: {
@@ -20,7 +27,9 @@ const data = {
         skills: {
             skils: "Yetenekler",
             skillsArray1: [JavascriptLogo, ReactLogo, ReduxLogo],
-            skillsArray2: [NodeLogo, VsCodeLogo, FigmaLogo]
+            skillsArray2: [NodeLogo, VsCodeLogo, FigmaLogo],
+            skillsDarkArray1:[JavascriptDark,ReactDark,ReduxDark],
+            skillsDarkArray2:[nodeDark,vsDark,figmaDark]
         },
         profile: {
             profile: "Profil Bilgilerim",
@@ -81,7 +90,9 @@ const data = {
         skills: {
             skils: "Skills",
             skillsArray1: [JavascriptLogo, ReactLogo, ReduxLogo],
-            skillsArray2: [NodeLogo, VsCodeLogo, FigmaLogo]
+            skillsArray2: [NodeLogo, VsCodeLogo, FigmaLogo],
+            skillsDarkArray1:[JavascriptDark,ReactDark,ReduxDark],
+            skillsDarkArray2:[nodeDark,vsDark,figmaDark]
         },
         profile: {
             profile: "Profile",

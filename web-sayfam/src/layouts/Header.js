@@ -3,6 +3,8 @@ import githubLigth from "../assets/github-lighth.png"
 import LinkedinLight from "../assets/LinkedIn.png"
 import HeroPicture from "../assets/resim.png"
 import { websiteContext } from '../contexts/websiteContext'
+import githubDark from "../assets/githubdark.png"
+import linkEdinDark from "../assets/LinkedIndark.png"
 import data from '../data/data'
 import axios from "axios"
 
@@ -31,7 +33,7 @@ export default function Header() {
         <div className="header-right bg-green dark:bg-[#1A210B] min-w-[30%]">
           <div className='bg-green dark:bg-[#1A210B]'>
             <div className="flex flex-row gap-2 items-center mt-8 ml-8 cursor-pointer" id="NightModeRoot">
-              <div onClick={darkModeHandler} className="bg-[#8f88ff] dark:bg-[#3A3A3A]  mt-0.5 self-start flex flex-row justify-start dark:justify-end w-12 shrink-0 h-6 items-center px-1 rounded-[100px]">
+              <div onClick={darkModeHandler} className="bg-[#8f88ff] dark:bg-[#3A3A3A]  mt-0.5 self-start flex flex-row justify-end dark:justify-start w-12 shrink-0 h-6 items-center px-1 rounded-[100px]">
                 <div className="bg-[#ffe86e] w-4 shrink-0 h-4 rounded-[50%]" id="Ellipse" />
                 <div
                   className="bg-[#e92577] w-px shrink-0 h-px rounded-[50%]"
@@ -56,12 +58,12 @@ export default function Header() {
             {data[language].header.description}
           </p>
           <div className='buttons gap-4 flex ml-72 mb-24 mt-4'>
-            <button className='bg-white dark:bg-[#171043] rounded-md py-4 px-8 flex gap-2'>
-              <img src={githubLigth} alt='github-light'></img>
+            <button className='bg-white dark:bg-[#252128] border border-white border-solid rounded-md py-4 px-8 flex gap-2'>
+              <img src={darkMode ? githubDark :  githubLigth} alt='github-light'></img>
               <p className='text-center dark:text-[#FFFFFF]'>Github</p>
             </button>
-            <button className='bg-white dark:bg-[#171043] rounded-md py-4 px-8 flex gap-2'>
-              <img src={LinkedinLight} alt='LinkedinLight'></img>
+            <button className='bg-white dark:bg-[#252128] border border-white border-solid rounded-md py-4 px-8 flex gap-2'>
+              <img src={darkMode ? linkEdinDark : LinkedinLight} alt='LinkedinLight'></img>
               <p className='mt-1 dark:text-[#FFFFFF]'>Linkedin</p>
             </button>
           </div>

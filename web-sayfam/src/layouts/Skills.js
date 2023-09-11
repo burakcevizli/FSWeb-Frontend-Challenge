@@ -5,22 +5,22 @@ import { websiteContext } from '../contexts/websiteContext'
 
 export default function Skills() {
 
-    const { language } = useContext(websiteContext)
+    const { language,darkMode } = useContext(websiteContext)
 
 
     return (
         <div className='dark:bg-[#252128;]'>
             <div className=' max-w-[66%] ml-72 flex justify-between py-24 '>
-                <p className=' text-8xl text-[#4832D3]' >{data[language].skills.skils}</p>
+                <p className=' text-8xl text-[#4832D3] dark:text-[#CBF281]' >{data[language].skills.skils}</p>
                 <div className='flex flex-col gap-12' style={{ maxHeight: "50vh" }}>
-                    {data[language].skills.skillsArray1.map(item =>
+                    {(darkMode ? data[language].skills.skillsDarkArray1 : data[language].skills.skillsArray1).map(item =>
                         <div>
                             <img src={item} alt='Pictures' />
                         </div>
                     )}
                 </div>
                 <div className='flex flex-col gap-12' style={{ maxHeight: "50vh" }}>
-                    {data[language].skills.skillsArray2.map(item =>
+                    {(darkMode ? data[language].skills.skillsDarkArray2 : data[language].skills.skillsArray2).map(item =>
                         <div>
                             <img src={item} alt='Pictures' />
                         </div>
