@@ -8,30 +8,29 @@ import FigmaLogo from "../assets/figma.png"
 
 export default function Skills() {
     const array1 = [
-        JavascriptLogo, ReactLogo, ReduxLogo,NodeLogo, VsCodeLogo, FigmaLogo
+        JavascriptLogo, ReactLogo, ReduxLogo
     ]
     const array2 = [
-        // NodeLogo, VsCodeLogo, FigmaLogo
+        NodeLogo, VsCodeLogo, FigmaLogo
     ]
     return (
-        <div className=' w-8/12 ml-72 flex justify-between'>
+        <div className=' max-w-[66%] ml-72 flex justify-between py-24'>
             <p className=' text-8xl text-[#4832D3]' >Skills</p>
-            <div className='flex justify-between gap-16'>
-                <div className='ImagesDiv flex flex-row max-h-74 flex-wrap gap-4'>
-                    {array1.map(item =>
-                        <div>
-                            <img className='images' src={item} alt='Pictures' />
-                        </div>
-                    )}
-                </div>
-                {/* <div className='ImagesDiv flex flex-col flex-wrap gap-4'>
-                    {array2.map(item =>
-                        <div>
-                            <img className='images' src={item} alt='Pictures' />
-                        </div>
-                    )}
-                </div> */}
+            <div className='flex flex-col gap-12' style={{ maxHeight: "50vh" }}>
+                {array1.map(item =>
+                    <div>
+                        <img src={item} alt='Pictures' />
+                    </div>
+                )}
             </div>
+            <div className='flex flex-col gap-12' style={{ maxHeight: "50vh" }}>
+                {array2.map(item =>
+                    <div>
+                        <img src={item} alt='Pictures' />
+                    </div>
+                )}
+            </div>
+
         </div>
 
     )
