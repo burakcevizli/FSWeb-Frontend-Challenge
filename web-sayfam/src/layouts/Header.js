@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import githubLigth from "../assets/github-lighth.png"
 import LinkedinLight from "../assets/LinkedIn.png"
 import HeroPicture from "../assets/resim.png"
@@ -7,8 +7,15 @@ import data from '../data/data'
 import axios from "axios"
 
 export default function Header() {
-  // 20.satırdaki justify startı end yapınca Dark mode değişecek !
+  // 32.satırdaki justify startı end yapınca Dark mode değişecek !
   const { language, setLanguage } = useContext(websiteContext)
+  const [darkMode , setDarkMode] = useState(false)
+
+  const darkModeHandler = (e) =>{
+    e.preventDefault()
+    setDarkMode(!darkMode)
+  }
+
   const languageHandler = () => {
     axios
       .post("https://reqres.in/api/users", { language })
