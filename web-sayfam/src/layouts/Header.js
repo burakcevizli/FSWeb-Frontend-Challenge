@@ -4,20 +4,28 @@ import LinkedinLight from "../assets/LinkedIn.png"
 import HeroPicture from "../assets/resim.png"
 import { websiteContext } from '../contexts/websiteContext'
 import data from '../data/data'
+import axios from "axios"
 
 export default function Header() {
   // 20.satırdaki justify startı end yapınca Dark mode değişecek !
-  const {language,setLanguage} = useContext(websiteContext)
+  const { language, setLanguage } = useContext(websiteContext)
+  const languageHandler = () => {
+    axios
+      .post("https://reqres.in/api/users", { language })
+      .then(res => setLanguage(res.data.language === "tr" ? "en" : "tr"))
+
+      .catch(err => console.log(err))
+  }
 
   return (
     <>
       <div className="header flex">
         <div className="header-left bg-purple min-w-[70%]">
-          <p onClick={()=>language === "tr" ? setLanguage("en"): setLanguage("tr")} className="text-green text-xl text-right mt-8 cursor-pointer mr-8"><span className='text-green'>{data[language].header.to}</span> <span style={{color:"#D9D9D9"}}>{data[language].header.languageSwitch}</span></p>
+          <p onClick={languageHandler} className="text-green text-xl text-right mt-8 cursor-pointer mr-8"><span className='text-green'>{data[language].header.to}</span> <span style={{ color: "#D9D9D9" }}>{data[language].header.languageSwitch}</span></p>
           <p className="text-green text-3xl ml-72">{data[language].header.name}</p>
         </div>
 
-        
+
         <div className="header-right bg-green min-w-[30%]">
           <div className='DARKMODE bg-green'>
             <div className="flex flex-row gap-2 items-center mt-8 ml-8 cursor-pointer" id="NightModeRoot">
