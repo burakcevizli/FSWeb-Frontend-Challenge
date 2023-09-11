@@ -10,16 +10,19 @@ import axios from "axios"
 
 export default function Header() {
   // 32.satırdaki justify startı end yapınca Dark mode değişecek !
-  const { language, setLanguage,darkModeHandler,darkMode } = useContext(websiteContext)
+  const { language, setLanguage, darkModeHandler, darkMode } = useContext(websiteContext)
 
-  
+
   const languageHandler = () => {
     axios
       .post("https://reqres.in/api/users", { language })
-      .then(res => setLanguage(res.data.language === "tr" ? "en" : "tr"))
-
+      .then(res => {
+        setLanguage(res.data.language === "tr" ? "en" : "tr");
+        localStorage.setItem("language", res.data.language === "tr" ? "en" : "tr");
+      })
       .catch(err => console.log(err))
   }
+
 
   return (
     <>
@@ -57,9 +60,9 @@ export default function Header() {
           <p className="text-white text-2xl ml-72 mr-48 mt-12">
             {data[language].header.description}
           </p>
-          <div className='buttons gap-4 flex ml-72 mb-24 mt-4'>
+          <div className='buttons gap-4 flex ml-72 mb-24 mt-8 pt-5'>
             <button className='bg-white dark:bg-[#252128] border border-white border-solid rounded-md py-4 px-8 flex gap-2'>
-              <img src={darkMode ? githubDark :  githubLigth} alt='github-light'></img>
+              <img src={darkMode ? githubDark : githubLigth} alt='github-light'></img>
               <p className='text-center dark:text-[#FFFFFF]'>Github</p>
             </button>
             <button className='bg-white dark:bg-[#252128] border border-white border-solid rounded-md py-4 px-8 flex gap-2'>
