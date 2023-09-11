@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from 'react'
+import React, { useContext } from 'react'
 import Mail from "../assets/mail.png"
 import Twitter from "../assets/twitter.png"
 import Codepen from "../assets/codepen.png"
