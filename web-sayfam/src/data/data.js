@@ -11,8 +11,11 @@ const data = {
     tr: {
         header: {
             name: "BURAK",
-            title: "Ben Bir Fullstack Developerım...",
-            description: "...mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir ürünleri oluşturmayı seven."
+            title: "Ben Bir Fullstack",
+            titleSecond:"Developerım...",
+            description: "...mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir ürünleri oluşturmayı seven.",
+            to:"TO",
+            languageSwitch:"ENGLISH"
         },
         skills: {
             skils: "Yetenekler",
@@ -20,8 +23,8 @@ const data = {
             skillsArray2: [NodeLogo, VsCodeLogo, FigmaLogo]
         },
         profile: {
-            profile: "Profil",
-            title: "Genel Bilgi",
+            profile: "Profil Bilgilerim",
+            title: "Genel Bilgilerim",
             birthday: "Doğum Tarihi",
             city: "İkamet Şehri",
             graduatedFrom: "Eğitim Durumu",
@@ -34,10 +37,11 @@ const data = {
             },
             aboutMe: "Hakkımda",
             aboutMeFirstP: "TÜRKÇE LOREM ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
-            aboutMeSecondP: "TÜRKÇE Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
+            aboutMeSecondP: "TÜRKÇE Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
         },
         projects: {
-            title: "Projeler",
+            title: "Projelerim",
+            visit:"Siteyi Görüntüle",
             projectsArray: [
                 {
                     title: "Workintech",
@@ -58,13 +62,21 @@ const data = {
             description:"Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Devam edin...",
             mail:"burakcevizli@gmail.com"
         }
-
     },
+
+
+
+
+
+
     en: {
         header: {
             name: "BURAK",
-            title: "I am a Frontend Developer...",
-            description: "...who likes to craft solid and scalable frontend products with great user experiences."
+            title: "I am a Frontend",
+            titleSecond:"Developer...",
+            description: "...who likes to craft solid and scalable frontend products with great user experiences.",
+            to:"TÜRKÇE",
+            languageSwitch:"'YE GEÇ"
         },
         skills: {
             skils: "Skills",
@@ -90,6 +102,7 @@ const data = {
         },
         projects: {
             title: "Projects",
+            visit:"View Site",
             projectsArray: [
                 {
                     title: "Workintech",
@@ -112,3 +125,5 @@ const data = {
         }
     }
 }
+
+export default data;

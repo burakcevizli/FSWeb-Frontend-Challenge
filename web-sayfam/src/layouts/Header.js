@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import githubLigth from "../assets/github-lighth.png"
 import LinkedinLight from "../assets/LinkedIn.png"
 import HeroPicture from "../assets/resim.png"
+import { websiteContext } from '../contexts/websiteContext'
+import data from '../data/data'
 
 export default function Header() {
   // 20.satırdaki justify startı end yapınca Dark mode değişecek !
+  const {language,setLanguage} = useContext(websiteContext)
+
   return (
     <>
       <div className="header flex">
         <div className="header-left bg-purple min-w-[70%]">
-          <p className="text-green text-xl text-right mt-8 cursor-pointer mr-8"><span className='text-green'>TÜRKÇE</span> <span style={{color:"#D9D9D9"}}>'YE GEÇ</span></p>
-          <p className="text-green text-3xl ml-72">BURAK</p>
+          <p onClick={()=>language === "tr" ? setLanguage("en"): setLanguage("tr")} className="text-green text-xl text-right mt-8 cursor-pointer mr-8"><span className='text-green'>{data[language].header.to}</span> <span style={{color:"#D9D9D9"}}>{data[language].header.languageSwitch}</span></p>
+          <p className="text-green text-3xl ml-72">{data[language].header.name}</p>
         </div>
 
         
@@ -35,12 +39,11 @@ export default function Header() {
       <div className="hero-content flex">
         <div className="hero-left bg-purple min-w-[70%] self-end ">
           <p className="text-green text-6xl ml-72 mr-48 mt-24">
-            I am a Frontend
+            {data[language].header.title}
           </p>
-          <p className="text-green text-6xl ml-72 mr-48">Developer...</p>
+          <p className="text-green text-6xl ml-72 mr-48">{data[language].header.titleSecond}</p>
           <p className="text-white text-2xl ml-72 mr-48 mt-12">
-            ...who likes to craft solid and scalable frontend products whith
-            great user experiences
+            {data[language].header.description}
           </p>
           <div className='buttons gap-4 flex ml-72 mb-24 mt-4'>
             <button className='bg-white rounded-md py-4 px-8 flex gap-2'>
