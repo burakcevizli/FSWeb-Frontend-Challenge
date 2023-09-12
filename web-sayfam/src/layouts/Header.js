@@ -66,10 +66,10 @@ export default function Header() {
         </div>
 
 
-        <div className="header-right bg-green dark:bg-[#1A210B] min-w-[30%]">
-          <div className='bg-green dark:bg-[#1A210B]'>
+        <div  className="header-right bg-green dark:bg-[#1A210B] min-w-[30%]">
+          <div onClick={darkModeHandler} className='bg-green dark:bg-[#1A210B]'>
             <div className="flex flex-row gap-2 items-center mt-8 ml-8 cursor-pointer" id="NightModeRoot">
-              <div onClick={darkModeHandler} className="bg-[#8f88ff] dark:bg-[#3A3A3A]  mt-0.5 self-start flex flex-row justify-end dark:justify-start w-12 shrink-0 h-6 items-center px-1 rounded-[100px]">
+              <div  className="bg-[#8f88ff] dark:bg-[#3A3A3A]  mt-0.5 self-start flex flex-row justify-end dark:justify-start w-12 shrink-0 h-6 items-center px-1 rounded-[100px]">
                 <div className="bg-[#ffe86e] w-4 shrink-0 h-4 rounded-[50%]" id="Ellipse" />
                 <div
                   className="bg-[#e92577] w-px shrink-0 h-px rounded-[50%]"
