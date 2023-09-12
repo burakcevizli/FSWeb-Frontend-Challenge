@@ -5,7 +5,7 @@ import Header from './layouts/Header';
 import Profile from './layouts/Profile';
 import Projects from './layouts/Projects';
 import Skills from './layouts/Skills';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {

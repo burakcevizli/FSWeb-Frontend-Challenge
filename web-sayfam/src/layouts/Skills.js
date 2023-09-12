@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-
 import data from '../data/data'
 import { websiteContext } from '../contexts/websiteContext'
 
