@@ -56,10 +56,10 @@ export default function Profile() {
                     <h6 className='text-3xl text-[#FFF]  '>
                         {data[language].profile.aboutMe}
                     </h6>
-                    <p className='mt-12 text-[#FFF]'>
+                    <p className='mt-6 text-[#FFF]'>
                         {data[language].profile.aboutMeFirstP}
                     </p>
-                    <p className='mt-12 text-[#FFF]'>
+                    <p className='mt-6 text-[#FFF]'>
                         {data[language].profile.aboutMeSecondP}
                     </p>
                 </div>
