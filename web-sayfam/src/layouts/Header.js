@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Header() {
-  
+
   const { language, setLanguage, darkModeHandler, darkMode } = useContext(websiteContext)
 
 
@@ -25,7 +25,7 @@ export default function Header() {
       .catch(err => console.log(err))
   }
 
-  const gitHubOnClickHandler = () =>{
+  const gitHubOnClickHandler = () => {
     toast.success('Github Yönlendiriliyorsunuz...', {
       position: "top-right",
       autoClose: 2000,
@@ -35,13 +35,13 @@ export default function Header() {
       draggable: true,
       progress: undefined,
       theme: "colored",
-      });
-      setTimeout(()=>{
-        window.open("https://github.com/burakcevizli","_blank")
-      },2000)
-      
+    });
+    setTimeout(() => {
+      window.open("https://github.com/burakcevizli", "_blank")
+    }, 2000)
+
   }
-  const linkEdinOnClickHandler = () =>{
+  const linkEdinOnClickHandler = () => {
     toast.success('Linkedin Yönlendiriyorsunuz...', {
       position: "top-right",
       autoClose: 2000,
@@ -51,10 +51,10 @@ export default function Header() {
       draggable: true,
       progress: undefined,
       theme: "colored",
-      });
-      setTimeout(()=>{
-        window.open("https://www.linkedin.com/in/burak-cevizli-044631155/","_blank")
-      },2000)
+    });
+    setTimeout(() => {
+      window.open("https://www.linkedin.com/in/burak-cevizli-044631155/", "_blank")
+    }, 2000)
   }
 
   return (

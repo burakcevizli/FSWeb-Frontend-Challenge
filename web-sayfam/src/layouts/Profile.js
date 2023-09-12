@@ -5,7 +5,7 @@ import { websiteContext } from '../contexts/websiteContext'
 
 export default function Profile() {
 
-    const {language} = useContext(websiteContext)
+    const { language } = useContext(websiteContext)
 
     return (
         <div className='bg-purple pb-12 dark:bg-[#171043]'>
@@ -19,10 +19,10 @@ export default function Profile() {
                                 {data[language].profile.birthday}
                             </h6>
                             <h6 className='mt-8'>
-                            {data[language].profile.city}
+                                {data[language].profile.city}
                             </h6>
                             <h6 className='mt-8'>
-                            {data[language].profile.graduatedFrom}
+                                {data[language].profile.graduatedFrom}
                             </h6>
                             <h6 className='mt-8'>
                                 {data[language].profile.role}
@@ -30,17 +30,17 @@ export default function Profile() {
                         </div>
                         <div className='w-44 mt-6 ml-4 text-[#FFF]'>
                             <h6 >
-                            {data[language].profile.response.birthday}
+                                {data[language].profile.response.birthday}
                             </h6>
                             <h6 className='mt-8'>
-                            {data[language].profile.response.city}
+                                {data[language].profile.response.city}
                             </h6>
 
                             <h6 className='mt-8'>
-                            {data[language].profile.response.graduatedFrom}
+                                {data[language].profile.response.graduatedFrom}
                             </h6>
                             <h6 className='mt-8'>
-                            {data[language].profile.response.role}
+                                {data[language].profile.response.role}
                             </h6>
                         </div>
                     </div>
@@ -54,13 +54,13 @@ export default function Profile() {
                 />
                 <div className='w-[18.75rem]'>
                     <h6 className='text-3xl text-[#FFF]  '>
-                    {data[language].profile.aboutMe}
+                        {data[language].profile.aboutMe}
                     </h6>
                     <p className='mt-12 text-[#FFF]'>
-                    {data[language].profile.aboutMeFirstP}
+                        {data[language].profile.aboutMeFirstP}
                     </p>
                     <p className='mt-12 text-[#FFF]'>
-                    {data[language].profile.aboutMeSecondP}
+                        {data[language].profile.aboutMeSecondP}
                     </p>
                 </div>
             </div>

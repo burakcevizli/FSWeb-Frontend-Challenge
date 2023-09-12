@@ -19,17 +19,17 @@ const data = {
         header: {
             name: "BURAK",
             title: "Ben Bir Fullstack",
-            titleSecond:"Developerım...",
+            titleSecond: "Developerım...",
             description: "...mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir ürünleri oluşturmayı seven.",
-            to:"TO",
-            languageSwitch:"ENGLISH"
+            to: "TO",
+            languageSwitch: "ENGLISH"
         },
         skills: {
             skils: "Yetenekler",
             skillsArray1: [JavascriptLogo, ReactLogo, ReduxLogo],
             skillsArray2: [NodeLogo, VsCodeLogo, FigmaLogo],
-            skillsDarkArray1:[JavascriptDark,ReactDark,ReduxDark],
-            skillsDarkArray2:[nodeDark,vsDark,figmaDark]
+            skillsDarkArray1: [JavascriptDark, ReactDark, ReduxDark],
+            skillsDarkArray2: [nodeDark, vsDark, figmaDark]
         },
         profile: {
             profile: "Profil Bilgilerim",
@@ -50,7 +50,7 @@ const data = {
         },
         projects: {
             title: "Projelerim",
-            visit:"Siteyi Görüntüle",
+            visit: "Siteyi Görüntüle",
             projectsArray: [
                 {
                     title: "Workintech",
@@ -63,13 +63,13 @@ const data = {
                     img: ProjectPicture2,
                     description: "TÜRKÇE A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
                     programs: ["React", "Redux", "Vercel"]
-                }
+                },
             ]
         },
-        footer:{
-            title:"Bana mesaj gönderin!",
-            description:"Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Devam edin...",
-            mail:"burakcevizli@gmail.com"
+        footer: {
+            title: "Bana mesaj gönderin!",
+            description: "Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Devam edin...",
+            mail: "burakcevizli@gmail.com"
         }
     },
 
@@ -82,17 +82,17 @@ const data = {
         header: {
             name: "BURAK",
             title: "I am a Frontend",
-            titleSecond:"Developer...",
+            titleSecond: "Developer...",
             description: "...who likes to craft solid and scalable frontend products with great user experiences.",
-            to:"TÜRKÇE",
-            languageSwitch:"'YE GEÇ"
+            to: "TÜRKÇE",
+            languageSwitch: "'YE GEÇ"
         },
         skills: {
             skils: "Skills",
             skillsArray1: [JavascriptLogo, ReactLogo, ReduxLogo],
             skillsArray2: [NodeLogo, VsCodeLogo, FigmaLogo],
-            skillsDarkArray1:[JavascriptDark,ReactDark,ReduxDark],
-            skillsDarkArray2:[nodeDark,vsDark,figmaDark]
+            skillsDarkArray1: [JavascriptDark, ReactDark, ReduxDark],
+            skillsDarkArray2: [nodeDark, vsDark, figmaDark]
         },
         profile: {
             profile: "Profile",
@@ -113,7 +113,7 @@ const data = {
         },
         projects: {
             title: "Projects",
-            visit:"View Site",
+            visit: "View Site",
             projectsArray: [
                 {
                     title: "Workintech",
@@ -129,10 +129,10 @@ const data = {
                 }
             ]
         },
-        footer:{
-            title:"Send me a message!",
-            description:"Got a question or proposal, or just want to say hello? Go ahead.",
-            mail:"burakcevizli@gmail.com"
+        footer: {
+            title: "Send me a message!",
+            description: "Got a question or proposal, or just want to say hello? Go ahead.",
+            mail: "burakcevizli@gmail.com"
         }
     }
 }
