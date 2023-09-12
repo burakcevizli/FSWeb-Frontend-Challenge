@@ -39,7 +39,8 @@ const WebSiteProvider = ({ children }) => {
     localStorage.setItem("darkmode", JSON.stringify(darkMode));
   }, [darkMode]);
 
-  const [language, setLanguage] = useState(localStorage.getItem("language") ? localStorage.getItem("language") : "en")
+  const [language, setLanguage] = useState(localStorage.getItem("language") ? localStorage.getItem("language") : navigator.languages.includes("tr") ? "tr" : "en")
+
 
   return (
     <websiteContext.Provider value={{ language, setLanguage, darkModeHandler, darkMode }}>{children}</websiteContext.Provider>
