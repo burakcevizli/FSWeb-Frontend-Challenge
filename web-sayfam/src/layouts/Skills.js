@@ -9,7 +9,7 @@ export default function Skills() {
 
     return (
         <div className='dark:bg-[#252128;]'>
-            <div className=' max-w-[66%] ml-72 flex justify-between py-24 '>
+            <div className=' max-w-[66%] ml-80 flex justify-between py-24 '>
                 <p className=' text-8xl text-[#4832D3] dark:text-[#CBF281]' >{data[language].skills.skils}</p>
                 <div className='flex flex-col gap-12' style={{ maxHeight: "50vh" }}>
                     {(darkMode ? data[language].skills.skillsDarkArray1 : data[language].skills.skillsArray1).map((item, index) =>
