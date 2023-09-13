@@ -18,7 +18,7 @@ export default function Skills() {
                         </div>
                     )}
                 </div>
-                <div className='flex flex-col gap-12' style={{ maxHeight: "60vh" }}>
+                <div className='flex flex-col gap-12' style={{ height: "60%" }}>
                     {(darkMode ? data[language].skills.skillsDarkArray2 : data[language].skills.skillsArray2).map((item, index) =>
                         <div key={index}>
                             <img src={item} alt='Pictures' />
