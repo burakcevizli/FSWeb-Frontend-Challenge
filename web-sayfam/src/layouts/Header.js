@@ -77,7 +77,7 @@ export default function Header() {
                 />
                 <img
                   src="https://file.rendit.io/n/9pIHWKatvVFeZNYtNluM.svg"
-                  className="relative w-3"
+                  className="relative w-4 h-4 right-0.5"
                   id="Ellipse1"
                 />
               </div>
