@@ -45,7 +45,7 @@ const data = {
                 role: "Fullstack Developer"
             },
             aboutMe: "Hakkımda",
-            aboutMeFirstP: "TÜRKÇE LOREM ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
+            aboutMeFirstP: "TÜRKÇE LOREM ipsum, dolor sit amet consectetur adipisicing elit. ",
             aboutMeSecondP: "TÜRKÇE Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
         },
         projects: {
@@ -108,8 +108,8 @@ const data = {
                 role: "Fullstack Developer"
             },
             aboutMe: "About Me",
-            aboutMeFirstP: "ENG Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
-            aboutMeSecondP: "ENG Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
+            aboutMeFirstP: "ENG Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+            aboutMeSecondP: "ENG Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
         },
         projects: {
             title: "Projects",
