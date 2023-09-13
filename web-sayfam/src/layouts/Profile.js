@@ -35,7 +35,7 @@ export default function Profile() {
                     </div>
                 </div>
                 <img src={ProfilePicture} className="" id="ImageRoot" alt="sad" />
-                <div className="w-[18.75rem]">
+                <div className="w-[18.75rem] flex flex-col justify-between">
                     <h6 className="text-3xl text-[#FFF]  ">
                         {data[language].profile.aboutMe}
                     </h6>
