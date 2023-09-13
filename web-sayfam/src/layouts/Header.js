@@ -66,10 +66,28 @@ export default function Header() {
         </div>
 
 
-        <div  className="header-right bg-green dark:bg-[#1A210B] min-w-[30%]">
-          <div  className='bg-green dark:bg-[#1A210B]'>
-            <div  className="flex flex-row gap-2 items-center mt-8 ml-8 cursor-pointer" id="NightModeRoot">
-              <div onClick={darkModeHandler} className="bg-[#8f88ff] dark:bg-[#3A3A3A]  mt-0.5 self-start flex flex-row justify-end dark:justify-start w-12 shrink-0 h-6 items-center px-1 rounded-[100px]">
+        <div className="header-right bg-green dark:bg-[#1A210B] min-w-[30%]">
+          <div className='bg-green dark:bg-[#1A210B]'>
+            {darkMode ? <div  className="flex flex-row gap-2 items-center mt-8 ml-8 cursor-pointer" id="DarkModeRoot">
+              <div onClick={darkModeHandler} className="bg-[#3a3a3a] self-start relative flex flex-col w-12 shrink-0 mt-1 items-start px-3 py-1 rounded-[100px]">
+                <img
+                  src="https://file.rendit.io/n/845kQBcmiFZ1MEjEXABS.svg"
+                  className="w-4 h-4 absolute top-1 left-1"
+                  id="Ellipse"
+                />
+                <img
+                  src="https://file.rendit.io/n/9pIHWKatvVFeZNYtNluM.svg"
+                  className="relative w-3"
+                  id="Ellipse1"
+                />
+              </div>
+              <div  onClick={darkModeHandler}  className="text-xl font-['Inter']tracking-[1.5] text-[#d9d9d9]">
+                LIGHT MODE
+              </div>
+            </div>
+              :  
+            <div className="flex flex-row gap-2 items-center mt-8 ml-8 cursor-pointer" id="NightModeRoot">
+              <div onClick={darkModeHandler}  className="bg-[#8f88ff] dark:bg-[#3A3A3A]  mt-0.5 self-start flex flex-row justify-end dark:justify-start w-12 shrink-0 h-6 items-center px-1 rounded-[100px]">
                 <div className="bg-[#ffe86e] w-4 shrink-0 h-4 rounded-[50%]" id="Ellipse" />
                 <div
                   className="bg-[#e92577] w-px shrink-0 h-px rounded-[50%]"
@@ -80,6 +98,7 @@ export default function Header() {
                 DARK MODE
               </div>
             </div>
+            }
           </div>
         </div>
       </div>
