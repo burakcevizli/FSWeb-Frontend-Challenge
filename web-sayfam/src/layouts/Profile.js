@@ -8,10 +8,10 @@ export default function Profile() {
 
     return (
         <div className="bg-purple pb-12 dark:bg-[#171043]">
-            <h2 className="text-green text-6xl ml-60 mb-8  pt-16">
+            <h2 className="text-green text-6xl ml-80 mb-8  pt-16">
                 {data[language].profile.profile}
             </h2>
-            <div className="ml-60 flex w-4/6 justify-between">
+            <div className="ml-80 flex w-4/6 justify-between">
                 <div className="">
                     <h6 className="text-3xl text-[#FFF]  ">
                         {data[language].profile.title}
