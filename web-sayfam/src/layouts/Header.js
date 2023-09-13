@@ -69,7 +69,7 @@ export default function Header() {
         <div className="header-right bg-green dark:bg-[#1A210B] min-w-[30%]">
           <div className='bg-green dark:bg-[#1A210B]'>
             {darkMode ? <div  className="flex flex-row gap-2 items-center mt-8 ml-8 cursor-pointer" id="DarkModeRoot">
-              <div onClick={darkModeHandler} className="bg-[#3a3a3a] self-start relative flex flex-col w-12 shrink-0 mt-1 items-start px-3 py-1 rounded-[100px]">
+              <div onClick={darkModeHandler} className="bg-[#3a3a3a] self-start relative flex flex-col w-12 shrink-0 mt-0.5 items-start px-3 py-1 rounded-[100px]">
                 <img
                   src="https://file.rendit.io/n/845kQBcmiFZ1MEjEXABS.svg"
                   className="w-4 h-4 absolute top-1 left-1"
