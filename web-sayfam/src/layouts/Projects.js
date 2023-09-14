@@ -1,10 +1,25 @@
 import React, { useContext } from 'react'
 import data from '../data/data'
 import { websiteContext } from '../contexts/websiteContext'
+import { toast } from 'react-toastify';
+
 
 export default function Projects() {
 
     const { language } = useContext(websiteContext)
+    const onClickHandler = () => {
+        toast.success('Projenin Sayfasına Yönlendiriliyorsunuz...', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    }
+
 
     return (
         <div className='bg-green pb-24 dark:bg-[#1A210B]'>
@@ -12,7 +27,7 @@ export default function Projects() {
 
             {data[language].projects.projectsArray.map((proje, index) => (
                 <div key={index} className='ml-80 w-4/6 mt-16 flex bg-white dark:bg-[#2B2727] rounded-xl'>
-                    <img src={proje.img} alt='Projepic' />
+                    <img className='w-[22.5rem] rounded-xl' src={proje.img} alt='Projepic' />
                     <div className='pl-8 pr-8'>
                         <h1 className='text-[32px] mt-6 text-[#4338CA] dark:text-[#C1BAED]  font-bold'>{proje.title}</h1>
                         <p className='text-[16px] mt-12 text-[#383838] dark:text-[#FFFFFF]'>{proje.description}</p>
@@ -24,7 +39,7 @@ export default function Projects() {
 
                         </div>
                         <div className='mt-12 pb-8'>
-                            <a href='#' className='text-[#120B39] dark:text-[#CBF281] underline underline-offset-2 text-xl'>{data[language].projects.visit}</a>
+                            <a onClick={onClickHandler} href={proje.site} target='_blank' className='text-[#120B39] dark:text-[#CBF281] underline underline-offset-2 text-xl'>{data[language].projects.visit}</a>
                             <a href='#' className='ml-24 text-[#120B39] dark:text-[#CBF281] underline underline-offset-2 text-xl' >Github</a>
                         </div>
                     </div>

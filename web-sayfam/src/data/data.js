@@ -12,7 +12,8 @@ import ReduxDark from "../assets/reduxDark.png"
 import nodeDark from "../assets/nodeDark.png"
 import vsDark from "../assets/vscDodeDark.png"
 import figmaDark from "../assets/figmaDark.png"
-
+import pizzaResim from "../assets/pizzasitesi.png"
+import todolist from "../assets/todolist.png"
 
 const data = {
     tr: {
@@ -53,17 +54,20 @@ const data = {
             visit: "Siteyi Görüntüle",
             projectsArray: [
                 {
-                    title: "Workintech",
-                    img: ProjectPicture1,
+                    title: "Pizza Sitesi",
+                    img: pizzaResim,
                     description: "TÜRKÇE A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    programs: ["Redux", "React", "Vercel"]
+                    programs: ["Redux", "React", "Yup"],
+                    site:"https://pizza-sitesi-wheat.vercel.app"
                 },
                 {
-                    title: "Journey",
-                    img: ProjectPicture2,
+                    title: "Todolist Sitesi",
+                    img: todolist,
                     description: "TÜRKÇE A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    programs: ["React", "Redux", "Vercel"]
+                    programs: ["React", "Redux", "Vercel"],
+                    site:"https://to-do-list-six-ochre.vercel.app"
                 },
+
             ]
         },
         footer: {
@@ -116,16 +120,18 @@ const data = {
             visit: "View Site",
             projectsArray: [
                 {
-                    title: "Workintech",
-                    img: ProjectPicture1,
+                    title: "Pizza Site",
+                    img: pizzaResim,
                     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    programs: ["Redux", "React", "Vercel"]
+                    programs: ["Redux", "React", "Yup"],
+                    site:"https://pizza-sitesi-wheat.vercel.app"
                 },
                 {
-                    title: "Journey",
-                    img: ProjectPicture2,
+                    title: "Todolist Site",
+                    img: todolist,
                     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-                    programs: ["React", "Redux", "Vercel"]
+                    programs: ["React", "Redux", "Vercel"],
+                    site:"https://to-do-list-six-ochre.vercel.app"
                 }
             ]
         },
