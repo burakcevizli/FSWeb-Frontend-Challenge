@@ -31,7 +31,7 @@ export default function Footer() {
 
         <div className='text-center dark:bg-[#252128]'>
             <h1 className='text-[48px] pt-12 text-purple dark:text-[#8F88FF]'>{data[language].footer.title}</h1>
-            <p className='text-[24px] dark:text-[#FFFFFF] mt-8 mb-8 text-[#120B39]'>{data[language].footer.description}</p>
+            <p className='text-[24px] dark:text-[#FFFFFF] mx-auto w-1/4 mt-8 mb-8 text-[#120B39]'>{data[language].footer.description}</p>
             <p onClick={mailOnClickHandler} className='cursor-pointer text-[20px] text-purple dark:text-[#8F88FF] underline underline-offset-2'>{data[language].footer.mail}</p>
             <div className='flex justify-center mt-8 pb-12 gap-4'>
                 <img src={Twitter} alt='A'></img>
