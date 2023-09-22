@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import githubLigth from "../assets/github-lighth.png"
 import LinkedinLight from "../assets/LinkedIn.png"
 import HeroPicture from "../assets/resim.png"
+import BurakPicture from "../assets/burakresim3.png"
 import { websiteContext } from '../contexts/websiteContext'
 import githubDark from "../assets/githubdark.png"
 import linkEdinDark from "../assets/LinkedIndark.png"
@@ -127,7 +128,7 @@ export default function Header() {
         <div className="hero-right bg-green dark:bg-[#1A210B] min-w-[30%]">
           <img
             className="-ml-64 absolute"
-            src={HeroPicture}
+            src={BurakPicture}
             alt="heroright"
           ></img>
         </div>
